@@ -1,9 +1,30 @@
-// Hamburger Menu 
+//logoの表示
+$(window).on('load',function(){
+  $("#splash").delay(2000).fadeOut('slow');
+  $("#splash_logo").delay(1700).fadeOut('slow');
+});
 
+// 動きのきっかけとなるアニメーションの名前を定義
+function fadeAnime(){
+
+  //ふわっと動くきっかけのクラス名と動きのクラス名の設定
+  $('.fadeUpTrigger').each(function(){ 
+  　　var elemPos = $(this).offset().top-50; 
+  　　var scroll = $(window).scrollTop();
+  　　var windowHeight = $(window).height();
+  　　if (scroll >= elemPos - windowHeight){
+  　　$(this).addClass('fadeUp');
+  　　}else{
+  　　　$(this).removeClass('fadeUp');
+  　　}
+  　　});
+}
+
+// Hamburger Menu 
 document.querySelector('.hamburger').addEventListener('click',function(){
-    this.classList.toggle('active');
-    document.querySelector('.slide-menu').classList.toggle('active');
-    document.body.classList.toggle("hidden");
+  this.classList.toggle('active');
+  document.querySelector('.slide-menu').classList.toggle('active');
+  document.body.classList.toggle("hidden");
 })
 
   //スクロールした際の動きを関数でまとめる
