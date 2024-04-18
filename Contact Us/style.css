@@ -1,0 +1,135 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #EEEDE9;
+    color: #212121;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'FreightBig Pro','Zen Old Mincho';
+}
+
+.hidden {
+  overflow: hidden;
+  background-color: #CFC7BC;
+}
+
+section {
+    position: relative;
+}
+
+h2 {
+    font-size: 80px;
+    font-family: FreightBig Pro;
+    font-weight: 400;
+}
+
+a {
+    color: #33332e;
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* contact form */
+#contact-form {
+    margin-top: 100px;
+}
+
+.contact-wrapper p.required::before {
+    content: "※";
+    color: #ff2727;
+}
+
+p.required {
+    text-align: end;
+    font-family: Yu Gothic;
+    font-size: 18px;
+}
+
+.form {
+    width: 489px;
+    height: auto;
+    padding-left: 0px;
+}
+
+.form li + li {
+    margin-top: 30px;
+}
+
+.form .required {
+    position: relative;
+}
+
+.form .required::after {
+    content: "※";
+    color: #ff2727;
+}
+
+.form .head {
+    font-family: Yu Gothic;
+    display: block;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.form input[type="text"], input[type="email"] {
+    width: 489px;
+    background-color: #f5f5f5;
+    border: solid 1px #CCCCCC;
+    padding: 18px 1px;
+    font-size: 16px;
+}
+
+.form #tel {
+    width: 318px;
+    background-color: #f5f5f5;
+    border: solid 1px #CCCCCC;
+    padding: 18px 1px;
+    font-size: 16px;
+}
+
+.form #date {
+    width: 230px;
+    background-color: #f5f5f5;
+    border: solid 1px #CCCCCC;
+    padding: 18px 1px;
+    font-size: 16px;
+}
+
+.form textarea {
+    width: 100%;
+    background-color: #f5f5f5;
+    border: solid 1px #CCCCCC;
+    padding: 18px 1px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 369px;
+    height: 71px;
+    background-color: #BCA37F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #212121;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.submit-btn span {
+    font-size: 20px;
+    font-family: Yu Gothic;
+    font-weight: 600;
+}

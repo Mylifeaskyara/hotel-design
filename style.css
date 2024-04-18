@@ -1,0 +1,263 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #EEEDE9;
+    color: #212121;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.hidden {
+  overflow: hidden;
+  background-color: #CFC7BC;
+}
+
+section {
+    position: relative;
+}
+
+h2 {
+    font-size: 80px;
+    font-family: FreightBig Pro;
+    font-weight: 400;
+}
+
+a {
+    color: #33332e;
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+/* About page */
+.p-about {
+    display: flex;
+    background-color: #113946;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 50px;
+    color: #EEEDE9;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    width: 612px;
+	height: 690px;
+}
+
+.about-details {
+    width: 770px;
+    height: 690px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-right: 38px;
+}
+
+.about-intro {
+    font-size: 23px;
+    font-family: Zen Old Mincho;
+    font-weight: 400;
+    line-height: 39.28px;
+    letter-spacing: 1.84px;
+}
+
+
+
+/* Top-Stay */
+
+.p-stay {
+    display: flex;
+    width: 100vw;
+    height: 1430px;
+    background: #CFC7BC;
+    color: #212121;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.tp-stay {
+    height: 376px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    width: 1420px;
+}
+
+.stay-intro {
+    font-size: 23px;
+    font-family: Zen Old Mincho;
+    font-weight: 400;
+    line-height: 39.28px;
+    letter-spacing: 1.84px;
+}
+
+
+.vm-btn{
+    display: flex;
+    margin:50px 0;
+    list-style: none;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 0;
+}
+
+.vm-btn li a{
+    display: block;
+    text-decoration: none;
+    color: #212121;
+    text-align: right;
+    font-family: EB Garamond;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.025rem;
+    position: absolute;
+}
+
+/*==================================================
+　5-3-9 テキストが入れ替わる
+===================================*/
+
+
+.vm-btn li a{
+    /*テキストの基点とするためrelativeを指定*/
+	position: relative;
+    /*はみ出る要素を隠す*/
+	overflow: hidden;
+	padding:10px 60px;
+}
+
+.vm-btn li span{
+    /*絶対配置でテキストの位置を決める*/
+	position: absolute;
+	left: 50%;
+	top:0;
+    /*アニメーションの指定*/
+	transition: all .5s;
+	transform: translate(-50%, 0);/*X方向に-50% ※中央寄せにするため*/
+  /*ブロック要素にして透過なし、テキスト折り返しなし*/  
+	display: block;
+	opacity:1;
+	white-space: nowrap;
+}
+
+/*差し替わるテキストの設定*/
+.vm-btn li span:nth-child(2){
+	opacity:0;/*透過0に*/
+    transform: translate(-50%,100%);/*X方向に-50% Y方向に100%*/
+}
+
+/*hoverするとテキストが入れ替わる設定*/
+.vm-btn li:hover span:nth-child(1){
+	opacity:0;/*透過0に*/
+    transform: translate(-50%,-100%);/*X方向に-50% Y方向に-100%*/
+}
+
+.vm-btn li:hover span:nth-child(2){
+	opacity:1;/*不透明に*/
+	transform: translate(-50%, 0);/*X方向に-50% Y方向に0*/
+}
+
+/*==================================================
+　Image Slideshow
+===================================*/
+.slider-wrapper {
+    position:absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 626px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+}
+.slider-item-box {
+    display: flex;
+    animation: loop-list 50s linear infinite;
+    padding: 0;
+    flex-direction: row;
+    gap: 80px;
+    margin-right: 80px;
+}
+
+
+
+@keyframes loop-list {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.slider-item {
+    width: 555px;
+    height: 100%;
+    display: block;
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+
+.slider:hover .slider-item-box {
+    animation-play-state: paused;
+}
+
+/* Experience */
+
+.p-experience {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 50px;
+    color: #212121;
+    justify-content: center;
+    align-items: center;
+}
+
+.tp-experience {
+    width: 748px;
+    height: 753px;
+    display: inline;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.exp-intro {
+    font-size: 120px;
+    font-family: FreightBig Pro;
+    font-weight: 500;
+    letter-spacing: 3.92px;
+}
+
+.exp-image {
+    width: 668px;
+    height: 753px;
+}
+

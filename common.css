@@ -1,0 +1,403 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #EEEDE9;
+    color: #212121;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'FreightBig Pro','Zen Old Mincho';
+}
+
+.hidden {
+  overflow: hidden;
+  background-color: #CFC7BC;
+}
+
+section {
+    position: relative;
+}
+
+h2 {
+    font-size: 80px;
+    font-family: FreightBig Pro;
+    font-weight: 400;
+}
+
+a {
+    color: #33332e;
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+
+/* ==========================================================
+	header
+========================================================== */
+header {
+    position: relative;
+    top: 0;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+/* Hamburger Menu */
+
+.hamburger {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.hamburger span {
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    background-color: #212121;
+    transition: .8s;
+}
+
+.hamburger span:first-of-type{
+    top: 0%;
+}
+
+.hamburger span:nth-of-type(2){
+    top: 50%;
+}
+
+.hamburger span:last-of-type{
+    top: 100%;
+}
+
+.hamburger.active span:first-of-type{
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-of-type(2){
+    opacity: 0;
+}
+
+.hamburger.active span:last-of-type{
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+.slide-menu.active{
+    transform: translateX(0);
+    background-color: #CFC7BC;
+}
+
+nav {
+    background-color: #EEEDE9;
+    position: fixed;
+    top: 116px;
+    width: 100%;
+    left: 0;
+    transform: translateX(100%);
+    z-index: 100;
+    height: 100vh;
+}
+
+.slide-menu-list {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.slide-menu-list li {
+    line-height: 100px;
+    text-align: center;
+    font-size: 80px;
+    font-family: FreightBig Pro;
+    transition: all 0.2s linear;
+}
+
+.slide-menu-list + .slide-menu-list {
+    margin-top: 100px;
+}
+
+.slide-menu-list span {
+    width: 1px;
+    height: 120px;
+    background-color: #212121;
+}
+
+.slide-menu-list .divider {
+    transform: skew(-15deg);
+}
+
+.slide-menu .footer-info {
+    margin-top: 115px;
+}
+
+.slide-menu-list li:hover {
+    transform: scale(1.05);
+}
+
+/* ==========================================================
+	Main
+========================================================== */
+main {
+    max-width: 1420px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .scroll-btn {
+    margin: 30px 0 10px 0;
+}
+
+.p-hero {
+    width: 100vw;
+	height: 753px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.lp-top {
+    width: 460px;
+	height: 753px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.header-wrapper {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 100%;
+    height: auto;
+}
+
+.site-header {
+    color: #212121;
+	text-align: center;
+	font-family: FreightBig Pro;
+	font-size: 215px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+/* scroll-button */
+.scroll-btn_light {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+}
+
+.scroll-btn {
+    transition: all 0.2s linear;
+}
+
+/* Footer */
+
+.footer-reservation {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.reservation-link-wrapper {
+    width: 100vw;
+    height: 753px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.footer-title {
+    color: #212121;
+    font-size: 190px;
+    font-family: FreightBig Pro;
+    font-weight: 500;
+    border-bottom: 5px solid #212121;
+    letter-spacing: 3.80px;
+    line-height: 1;
+}
+
+.footer-img {
+    width: 460px;
+	height: 753px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.footer-wrapper {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    height: auto;
+}
+
+.reservation-link {
+    display: flex;
+    align-items: baseline;
+    transition: all 0.2s linear;
+}
+
+.reservation-link:hover {
+    transform: scale(1.05);
+}
+
+.reservation-link img {
+    margin-left: 15px;
+}
+
+.link-wrap a {
+    text-decoration: underline
+}
+
+.link-wrap ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: unset;
+    font-size: 20px;
+}
+
+.link-wrap li + li {
+    margin-left: 40px;
+}
+
+.link-wrap li:hover {
+    font-weight: 600;
+}
+
+.link-wrap li {
+    transition: all 0.1s linear;
+}
+
+.footer-info {
+    max-width: 1420px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    line-height: 1;
+    padding: 60px 0;
+    font-family: FreightBig Pro;
+}
+
+.copyright {
+    text-align: left;
+}
+
+.copyright p {
+    margin: unset;
+    font-size: 20px;
+}
+
+/*========= ページトップのためのCSS ===============*/
+/*リンクの形状*/
+#page-top a{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	border: 1px solid #6C6C6C;
+	width: 60px;
+	height: 60px;
+	transition:all 0.3s;
+}
+
+#page-top span {
+    position: relative;
+    top: -10px;
+}
+
+#page-top span::before{
+    content:'';
+   position: absolute;
+   left:50%;
+   top:-3px;
+   background:#6C6C6C;
+   width:1px;
+   height: 30px;
+}
+
+#page-top span::after{
+    content:'';
+    position: absolute;
+    left:6px;
+    top:-7px;
+    background:#6C6C6C;
+    width:1px;
+    height: 20px; 
+    transform: rotate(-40deg);
+}
+
+#page-top a:hover span::before,
+#page-top a:hover span::after{
+	background: #fff;
+}
+
+#page-top a:hover{
+	background: #777;
+}
+
+#page-top {
+	position: fixed;
+	right: 20px;
+	z-index: 2;
+	opacity: 0;
+	transform: translateY(100px);
+}
+
+#page-top.UpMove{
+	animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime{
+  from {
+    opacity: 0;
+	transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+	transform: translateY(0);
+  }
+}
+
+#page-top.DownMove{
+	animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+  from {
+  	opacity: 1;
+	transform: translateY(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateY(100px);
+  }
+}

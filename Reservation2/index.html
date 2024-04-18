@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../common.css">
+
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../public/logo-1.svg" alt="site-logo" style="width: 129px; height: 102px;">
+        </a>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <div class="header-nav-wrapper">
+        <nav class="slide-menu">
+            <ul class="slide-menu-list">
+                <li><a href="../index.html">Home</a></li>
+                <span class="divider"></span>
+                <li><a href="../Guest Room/index.html">Guest Room</a></li>
+                <span class="divider"></span>
+            </ul>
+            <ul class="slide-menu-list">
+                <li><a href="../Experience/">Experience</a></li>
+                <span class="divider"></span>
+                <li><a href="../Access/index.html">Access</a></li>
+                <span class="divider"></span>
+                <li><a href="../FAQ/index.html">FAQ</a></li>
+                <span class="divider"></span>
+            </ul>
+            <ul class="slide-menu-list">
+                <li><a href="../Contact Us/index.html">Contact Us</a></li>
+                <span class="divider"></span>
+                <li><a href="../Reservation1/index.html">Reservation</a></li>
+                <span class="divider"></span>
+            </ul>
+            <div class="footer-info">
+                <div class="link-wrap pc">
+                    <ul>
+                        <li>
+                            <span>Tel: <a href="tel:090-1234-5678">090-1234-5678</a></span>
+                        </li>
+                        <li>
+                            <span>Mail: <a href="mailto:hitotokiresort@gmail.com">hitotokiresort@gmail.com</a></span>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://goo.gl/maps/VKaYByJFmUT2" class="map-link pc">Instagram</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://goo.gl/maps/VKaYByJFmUT2" class="insta-link pc">Map</a>
+                        </li>
+                    </ul>  
+                </div>
+                <div class="copyright">
+                    <p class="text">©HITOTOKI ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <section class="p-hero">
+            <div class="lp-top">
+                <img src="../public/reservation.png" alt="reservation image">
+            </div>
+            <div class="header-wrapper">
+                <h1 class="site-header">Reservation</h1>
+            </div>
+        </section>
+        <div class="scroll-btn">
+            <a href="#reservation">
+                <img src="../public/scroll-btn.svg" alt="scroll-btn" style="width: 51px; height: 51px;">
+            </a>
+        </div>
+        <section id="reservation">
+            <div class="reservation wrapper">
+                <div class="reservation-details">
+                    <div class="check-in input">
+                        <p>Check-in</p>
+                        <h3>12月20日</h3>
+                        <span class="divider"></span>
+                    </div>
+                    <div class="check-out input">
+                        <p>Check-out</p>
+                        <h3>12月22日</h3>
+                        <span class="divider"></span>
+                    </div>
+                    <div class="rooms input">
+                        <p>部屋数</p>
+                        <h3>1</h3>
+                        <span class="divider"></span>
+                    </div>
+                    <div class="adults input">
+                        <p>大人</p>
+                        <h3>2</h3>
+                        <span class="divider"></span>
+                    </div>
+                    <div class="childs input">
+                        <p>子ども（0~12歳）</p>
+                        <h3>1</h3>
+                        <span class="divider"></span>
+                    </div>
+                    <div class="search-btn">
+                        <a href="../Reservation2/index.html">
+                            <span>検索</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="guestroom-details">
+                    <h3>予約内容</h3>
+                    <div class="reservation-info">
+                        <div class="guestroom-info">
+                            <div class="left-box">
+                                <img src="../public/superior-reserved.png" alt="">
+                                <div class="plan">
+                                    <p>Superior Room</p>
+                                    <span><img src="../public/Check.svg" alt="">朝食付き</span>
+                                    <span><img src="../public/Check.svg" alt="">変更/キャンセル不可</span>
+                                    <span><img src="../public/Check.svg" alt="">ホテルでの精算</span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>合計金額 大人 × 2名 , 子供 × 1名 2泊の料金</span>
+                                <p>¥60,000</p>
+                            </div>
+                        </div>
+                        <span class="box-divider"></span>
+                        <div class="price-info">
+                            <div class="coupon-box">
+                                <p>クーポン</p>
+                                <input type="password" id="coupon-code" name="password" minlength="6" placeholder="クーポンコード入力" />
+                                <div class="sumbit-btn">
+                                    <a href="../Reservation2/index.html">
+                                        <span>適用</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="total-price">
+                                <div class="total">
+                                    <p>合計</p>
+                                    <span>(消費税10%含まれている)</span>
+                                </div>
+                                <div class="sum">
+                                    <p>¥60,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="guest-info">
+                    <div class="guest-details">
+                        <h3>宿泊者情報</h3>
+                        <ul class="form">
+                            <li>
+                                <span class="head required">お名前</span>
+                                <input type="text" id="name">
+                            </li>
+                            <li>
+                                <span class="head required">お名前(ふりがな)</span>
+                                <input type="text" id="name">
+                            </li>
+                            <li>
+                                <span class="head">郵便番号</span>
+                                <input type="text" id="postnumber">
+                            </li>
+                            <li>
+                                <span class="head">住所</span>
+                                <input type="text" id="address">
+                            </li>
+                            <li>
+                                <span class="head required">メールアドレス</span>
+                                <input type="email" id="email">
+                            </li>
+                            <li>
+                                <span class="head required">電話番号</span>
+                                <input type="text" id="tel">
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="form-divider"></span>
+                    <div class="payment">
+                        <h3>予約保証</h3>
+                        <p class="desc">オンラインではお支払いは発生しません。</p>
+                        <span>予約保証の為、お客様のクレジットカード情報がホテルに送信されます。
+                            <br>ご宿泊代金は宿泊時にホテルにて直接お支払いください。
+                            <br>このサイトはSSLに対応しておりクレジットカード番号は暗号化して送信されます。</span>
+                        <ul class="form">
+                            <li>
+                                <span class="head">クレジット/デビットカード番号</span>
+                                <input type="text" id="number">
+                            </li>
+                            <li>
+                                <span class="head">カード名義人氏名</span>
+                                <input type="text" id="name">
+                            </li>
+                            <li>
+                                <span class="head">有効期限</span>
+                                <input type="text" id="date" class="left-form">
+                                <input type="text" id="date">
+                            </li>
+                            <li>
+                                <span class="head">セキュリティーコード</span>
+                                <div class="secure-card">
+                                    <input type="text" id="security-number">
+                                    <div class="card-brand">
+                                        <img src="../public/logos_visa.svg" alt="">
+                                        <img src="../public/logos_mastercard.svg" alt="">
+                                        <img src="../public/logos_jcb.svg" alt="">
+                                        <img src="../public/logos_amex.svg" alt="">
+                                        <img src="../public/logos_dinersclub.svg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="privacy-policy">
+                    <p class="cancellation">こちらのご予約は変更・キャンセル不可です。
+                    <br>ノーショーの場合宿泊料金総額の100%が請求の対象となります。</p>
+                    <p class="check-box"><img src="../public/Check box.svg" alt="">私は、予約を選択することで、
+                        <a href="">販売条件</a>を読み承諾したことを認めます。</p>
+                    <div class="confirm-btn">
+                        <a href="../Reservation2/index.html">
+                            <span>予約確定</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    
+</body>
+
+<footer>
+    <p id="page-top">
+        <a href="#"><span></span></a>
+    </p>
+    <section class="footer-reservation">
+        <div class="reservation-link-wrapper">
+            <div class="footer-img">
+                <img src="../public/footer-img.png" alt="footer-img">
+            </div>
+            <div class="footer-wrapper">
+                <a href="../Reservation1/index.html" class="reservation-link">
+                    <h2 class="footer-title">Reservation</h2>
+                    <img src="../public/link-arrow.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+    <div id="footer" class="footer-info">
+        <div class="link-wrap pc">
+            <ul>
+                <li>
+                    <span>Tel: <a href="tel:090-1234-5678">090-1234-5678</a></span>
+                </li>
+                <li>
+                    <span>Mail: <a href="mailto:hitotokiresort@gmail.com">hitotokiresort@gmail.com</a></span>
+                </li>
+                <li>
+                    <a target="_blank" href="https://goo.gl/maps/VKaYByJFmUT2" class="map-link pc">Instagram</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://goo.gl/maps/VKaYByJFmUT2" class="insta-link pc">Map</a>
+                </li>
+            </ul>  
+        </div>
+        <div class="copyright">
+            <p class="text">©HITOTOKI ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="../script.js"></script>
+
+</html>

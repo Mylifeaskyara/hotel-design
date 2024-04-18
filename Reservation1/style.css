@@ -1,0 +1,175 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #EEEDE9;
+    color: #212121;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'FreightBig Pro','Zen Old Mincho';
+}
+
+.hidden {
+  overflow: hidden;
+  background-color: #CFC7BC;
+}
+
+section {
+    position: relative;
+}
+
+h2 {
+    font-size: 80px;
+    font-family: FreightBig Pro;
+    font-weight: 400;
+}
+
+a {
+    color: #33332e;
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* reservation Infomation */
+#reservation {
+    max-width: 1420px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 160px;
+}
+
+.reservation-details {
+    width: 1182px;
+    height: 172px;
+    background-color: #FFFFFF;
+    color: #212121;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    filter: drop-shadow(0 10px 10px rgb(0, 0, 0, 0.1));
+}
+
+.reservation-details .input {
+    height: 112px;
+    width: auto;
+    border-right: solid 1px #A9A9A9;
+    padding-right: 40px;
+}
+
+.reservation-details p {
+    font-size: 22px;
+    font-family: Yu Gothic;
+    margin: 0;
+}
+
+.reservation-details h3 {
+    font-size: 48px;
+    font-family: Zen Old Mincho;
+    margin: 0;
+}
+
+.reservation-details .divider {
+    width: 1px;
+    height: 110px;
+    background-color: #212121;
+}
+
+.search-btn {
+    width: 150px;
+    height: 70px;
+    background-color: #BCA37F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-btn span {
+    font-size: 24px;
+    font-family: Yu Gothic;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.guestroom-details {
+    display: flex;
+    margin-top: 75px;
+}
+
+.guestroom-info {
+    width: 712px;
+    height: 300px;
+    background-color: #113946;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.guestroom-info .plan {
+    width: 220px;
+    height: 187px;
+}
+
+.guestroom-info .plan p {
+    font-size: 32px;
+    margin-top: 0;
+    color: #FFFFFF;
+}
+
+.guestroom-info .plan span {
+    display: flex;
+    font-family: Yu Gothic;
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+.guestroom-info .plan img {
+    margin-right: 10px;
+}
+
+.guestroom-info .price {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.guestroom-info .price span {
+    font-size: 15px;
+    font-family: Yu Gothic;
+    color: #FFFFFF;
+}
+
+.guestroom-info .price p {
+    font-size: 48px;
+    font-family: Zen Old Mincho;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.guestroom-info .reserve-btn {
+    width: 140px;
+    height: 60px;
+    background-color: #A9A9A9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guestroom-info .reserve-btn span {
+    font-size: 20px;
+    font-family: Yu Gothic;
+    font-weight: 500;
+}
+

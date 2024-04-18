@@ -1,0 +1,128 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #EEEDE9;
+    color: #212121;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'FreightBig Pro','Zen Old Mincho';
+}
+
+.hidden {
+  overflow: hidden;
+  background-color: #CFC7BC;
+}
+
+section {
+    position: relative;
+}
+
+h2 {
+    font-size: 80px;
+    font-family: FreightBig Pro;
+    font-weight: 400;
+}
+
+a {
+    color: #33332e;
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* faq */
+#faq {
+    margin-top: 120px;
+}
+
+.faq-wrapper {
+    width: 1098px;
+    height: auto;
+    margin-bottom: 200px;
+}
+
+.faq-wrapper h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.accordion__list {
+    width: 1050px;
+    padding: 10px;
+}
+
+.accordion__item:nth-child(n+2) {
+    margin-top: 10px;
+}
+
+.accordion__head {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    border-top: solid 1px #212121;
+    font-family: Zen Old Mincho;
+}
+
+.accordion__head::after {
+    content: "+";
+    position: absolute;
+    top: 25px;
+    right: 11px;
+}
+
+.accordion__item.active .accordion__head::after {
+    content: "-";
+    right: 13px;
+}
+
+.accordion__body {
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding: 0 10px;
+    transition: all .4s ease;
+    font-family: Zen Old Mincho;
+}
+
+.accordion__body .underline {
+    text-decoration: underline;
+}
+
+.accordion__item.active .accordion__body {
+    height: auto;
+    padding: 10px;
+}
+
+.stay-faq {
+    margin-top: 130px;
+}
+
+
+.submit-btn {
+    width: 471px;
+    height: 90px;
+    background-color: #BCA37F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #212121;
+    margin-top: 90px;
+}
+
+.submit-btn span {
+    font-size: 18px;
+    font-family: Yu Gothic;
+    font-weight: 600;
+}

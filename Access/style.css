@@ -1,0 +1,85 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #EEEDE9;
+    color: #212121;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'FreightBig Pro','Zen Old Mincho';
+}
+
+.hidden {
+  overflow: hidden;
+  background-color: #CFC7BC;
+}
+
+section {
+    position: relative;
+}
+
+h2 {
+    font-size: 80px;
+    font-family: FreightBig Pro;
+    font-weight: 400;
+}
+
+a {
+    color: #33332e;
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* Access Infomation */
+#access {
+    max-width: 1420px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 160px;
+}
+
+.access-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+}
+
+.access-details {
+    position: relative;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.address p {
+    font-family: Yu Gothic;
+    font-size: 18px;
+}
+
+.address img {
+    width: 210px;
+    height: 23px;
+}
+
+.how-to-go {
+    display: flex;
+    gap: 150px;
+}
+
+.how-to-go img{
+    width: 391px;
+    height: 498px;
+}
+

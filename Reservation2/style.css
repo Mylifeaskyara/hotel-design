@@ -1,0 +1,431 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #EEEDE9;
+    color: #212121;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'FreightBig Pro','Zen Old Mincho';
+}
+
+.hidden {
+  overflow: hidden;
+  background-color: #CFC7BC;
+}
+
+section {
+    position: relative;
+}
+
+h2 {
+    font-size: 80px;
+    font-family: FreightBig Pro;
+    font-weight: 400;
+}
+
+a {
+    color: #33332e;
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* reservation Infomation */
+#reservation {
+    max-width: 1420px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 160px;
+}
+
+.reservation-details {
+    width: 1182px;
+    height: 172px;
+    background-color: #FFFFFF;
+    color: #212121;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    filter: drop-shadow(0 10px 10px rgb(0, 0, 0, 0.1));
+}
+
+.reservation-details .input {
+    height: 112px;
+    width: auto;
+    border-right: solid 1px #A9A9A9;
+    padding-right: 40px;
+}
+
+.reservation-details p {
+    font-size: 22px;
+    font-family: Yu Gothic;
+    margin: 0;
+}
+
+.reservation-details h3 {
+    font-size: 48px;
+    font-family: Zen Old Mincho;
+    margin: 0;
+}
+
+.reservation-details .divider {
+    width: 1px;
+    height: 110px;
+    background-color: #212121;
+}
+
+.search-btn {
+    width: 150px;
+    height: 70px;
+    background-color: #BCA37F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-btn span {
+    font-size: 20px;
+    font-family: Yu Gothic;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+/* guest Infomation */
+
+.guestroom-details {
+    margin-top: 75px;
+}
+
+.guestroom-details h3,
+.guest-details h3,
+.payment h3 {
+    font-size: 20px;
+}
+
+.guest-details h3,
+.payment h3 {
+    margin: 30px 0;
+}
+
+
+.reservation-info {
+    background-color: #113946;
+    height: 415px;
+    width: auto;
+}
+
+.guestroom-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-box {
+    display: flex;
+    align-items: flex-start;
+    margin: 50px 0 50px 30px;
+}
+.left-box img {
+    margin-right: 35px;
+}
+
+.guestroom-info .plan {
+    width: 220px;
+    height: auto;
+}
+
+.guestroom-info .plan p {
+    font-size: 30px;
+    margin-top: 0;
+    color: #FFFFFF;
+}
+
+.guestroom-info .plan span {
+    display: flex;
+    font-family: Yu Gothic;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.guestroom-info .plan img {
+    margin-right: 10px;
+}
+
+.guestroom-info .price {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.guestroom-info .price span {
+    font-size: 15px;
+    font-family: Yu Gothic;
+    color: #FFFFFF;
+}
+
+.guestroom-info .price p {
+    font-size: 40px;
+    font-family: Zen Old Mincho;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.box-divider {
+    width: 1000px;
+    height: 1px;
+    background-color: #FFFFFF;
+    display: block;
+}
+
+.price-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.coupon-box {
+    display: flex;
+    width: 500px;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 21px;
+}
+
+#coupon-code {
+    width: 250px;
+    height: 52px;
+    background-color: #A9A9A9;
+    border: none;
+}
+#coupon-code::placeholder {
+    color: #ffffffab;
+    font-weight: 600;
+}
+
+.coupon-box p {
+    font-size: 23px;
+    font-family: Yu Gothic;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-left: 30px;
+}
+
+.sumbit-btn {
+    width: 80px;
+    height: 52px;
+    background-color: #BCA37F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sumbit-btn span {
+    font-size: 15px;
+    font-family: Yu Gothic;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.total-price {
+    width: 325px;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.total-price .total {
+    display: flex;
+    flex-direction: column;
+}
+
+.total-price .total p {
+    font-size: 18px;
+    font-family: Yu Gothic;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+.total-price .total span {
+    font-size: 12px;
+    font-family: Yu Gothic;
+    color: #FFFFFF;
+}
+
+.total-price .sum {
+    font-size: 40px;
+    font-family: Zen Old Mincho;
+    color: #FFFFFF;
+}
+
+.total-price .sum p {
+    margin: 0;
+}
+
+.guest-info {
+    width: 1182px;
+    height: 836px;
+    background-color: #CFC7BC;
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.guest-details, .payment {
+    width: 490px;
+    height: auto;
+}
+
+.form {
+    width: 489px;
+    height: auto;
+    padding-left: 0px;
+}
+
+.form li + li {
+    margin-top: 20px;
+}
+
+.form .required {
+    position: relative;
+}
+
+.form .required::after {
+    content: "※";
+    color: #ff2727;
+}
+
+.form .head {
+    font-family: Yu Gothic;
+    display: block;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form input[type="text"], input[type="email"] {
+    width: 489px;
+    background-color: #f5f5f5;
+    border: none;
+    padding: 18px 1px;
+    font-size: 16px;
+}
+
+.form #tel {
+    width: 318px;
+    background-color: #f5f5f5;
+    border: none;
+    padding: 18px 1px;
+    font-size: 16px;
+}
+
+.form #date {
+    width: 230px;
+    background-color: #f5f5f5;
+    border: none;
+    padding: 18px 1px;
+    font-size: 16px;
+}
+
+.payment p, span {
+    font-family: Yu Gothic;
+}
+
+.desc{
+   font-size: 18px; 
+}
+
+
+.payment .form {
+    margin-top: 50px;
+}
+
+.form #security-number {
+    width: 230px;
+    background-color: #f5f5f5;
+    border: none;
+    padding: 18px 1px;
+    font-size: 16px;
+}
+
+.left-form {
+    margin-right: 20px;
+}
+
+.form-divider {
+    height: auto;
+    width: 0.5px;
+    background-color: #21212186;
+    display: block;
+}
+
+.card-brand {
+    width: 232px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.secure-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.privacy-policy {
+    margin-top: 50px;
+    width: 1182px;
+    height: 210px;
+    border-top: solid 1px #24221E;
+}
+
+.check-box a {
+    text-decoration: underline;
+}
+
+.check-box {
+    display: flex;
+    align-items: center;
+}
+
+.privacy-policy p {
+    font-size: 15px;
+    font-family: Yu Gothic;
+}
+
+.cancellation{
+    margin-top: 24px;
+}
+
+.confirm-btn {
+    width: 369px;
+    height: 71px;
+    margin-top: 30px;
+    background-color: #BCA37F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm-btn span {
+    font-size: 20px;
+    font-family: Yu Gothic;
+    font-weight: 600;
+    color: #FFFFFF;
+}

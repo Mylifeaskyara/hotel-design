@@ -1,0 +1,89 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #EEEDE9;
+    color: #212121;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'FreightBig Pro','Zen Old Mincho';
+}
+
+.hidden {
+  overflow: hidden;
+  background-color: #CFC7BC;
+}
+
+section {
+    position: relative;
+}
+
+h2 {
+    font-size: 80px;
+    font-family: FreightBig Pro;
+    font-weight: 400;
+}
+
+a {
+    color: #33332e;
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* Experience Infomation */
+#experience {
+    max-width: 1420px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 160px;
+}
+
+.exp-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+}
+
+.exp-details {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 127px;
+}
+
+.info-box {
+    width: 513px;
+    height: 360px;
+    color: #212121;
+}
+
+.info-box h2 {
+    font-size: 80px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.info-box p {
+    font-size: 20px;
+    font-family: YU Gothic;
+    margin-bottom: 30px;
+}
+
+.info-img {
+    width: 780px;
+    height: 100%;
+}
+
