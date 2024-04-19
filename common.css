@@ -245,34 +245,33 @@ ul li {
 }
 
 /* scroll-button */
-.scroll-btn_light {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 50px;
-}
-
 .scroll-btn {
     transition: all 0.2s linear;
 }
 
 @media screen and (min-width: 751px) {
-    
+    .scroll-btn_light {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 50px;
+    }
 }
 
 /* Footer */
 
-.footer-reservation {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 100px;
-}
 
 @media screen and (min-width: 751px) {
+    
+    .footer-reservation {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 100px;
+    }
     .reservation-link-wrapper {
         width: 100vw;
         height: 753px;
