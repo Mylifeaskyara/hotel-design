@@ -1,0 +1,259 @@
+.pc {
+    display: none;
+}
+
+.sp {
+    display: block;
+}
+
+
+/* ==========================================================
+	Header
+========================================================== */
+header {
+    position: relative;
+    top: 0;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+h2 {
+    font-size: 75px;
+    font-family: FreightBig Pro;
+    font-weight: 400;
+}
+
+/* ==========================================================
+	Hamburger menu
+========================================================== */
+nav {
+    background-color: #EEEDE9;
+    position: fixed;
+    top: 116px;
+    width: 100%;
+    left: 0;
+    transform: translateX(100%);
+    z-index: 100;
+    height: 100vh;
+}
+
+.slide-menu-list {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0px;
+}
+
+.slide-menu-list li {
+    line-height: 80px;
+    text-align: center;
+    font-size: 45px;
+    font-family: FreightBig Pro;
+    transition: all 0.2s linear;
+}
+
+.slide-menu-list + .slide-menu-list {
+    margin-top: 0;
+}
+
+.slide-menu-list span {
+    display: none;
+}
+
+.slide-menu .footer-info {
+    margin-top: 0;
+}
+
+.slide-menu.active{
+    transform: translateX(0);
+    background-color: #CFC7BC;
+    width: 100vw;
+}
+
+/* ==========================================================
+	Main
+========================================================== */
+
+main {
+    max-width: 690px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .scroll-btn {
+    margin: 0;
+}
+
+.p-hero {
+    width: 100vw;
+    height: 690px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lp-top {
+    scale: 0.8;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+}
+
+.site-header {
+    color: #212121;
+    text-align: center;
+    font-family: FreightBig Pro;
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* ==========================================================
+	Concept
+========================================================== */
+.p-about {
+    display: flex;
+    background-color: #113946;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 50px;
+    color: #EEEDE9;
+    flex-direction: column;
+}
+
+.about-img {
+    margin-top: 10px;
+}
+
+.about-img img{
+    width: 260px;
+    height: 100%;
+}
+
+.about-wrapper {
+    max-width: 690px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-details {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.about-details h2 {
+    margin-bottom: 0;
+}
+
+.about-intro {
+    font-family: Zen Old Mincho;
+    font-weight: 400;
+    line-height: 39.28px;
+    letter-spacing: 1.84px;
+    padding: 0 25px;
+}
+/* ==========================================================
+	Footer
+========================================================== */
+
+.reservation-link-wrapper {
+    width: 100vw;
+    height: 753px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.footer-title {
+    color: #212121;
+    font-size: 190px;
+    font-family: FreightBig Pro;
+    font-weight: 500;
+    border-bottom: 5px solid #212121;
+    letter-spacing: 3.80px;
+    line-height: 1;
+}
+
+.footer-img {
+    width: 460px;
+    height: 753px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.footer-wrapper {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    height: auto;
+}
+
+.reservation-link {
+    display: flex;
+    align-items: baseline;
+    transition: all 0.2s linear;
+}
+
+.reservation-link:hover {
+    transform: scale(1.05);
+}
+
+.reservation-link img {
+    margin-left: 15px;
+}
+
+.link-wrap a {
+    text-decoration: underline
+}
+
+.link-wrap ul {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    padding-left: 0;
+}
+
+.link-wrap li + li {
+    margin-left: 12px;
+}
+
+.link-wrap li:hover {
+    font-weight: 600;
+}
+
+.link-wrap li {
+    transition: all 0.1s linear;
+}
+
+.footer-info {
+    max-width: 690px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    padding: 70px 0;
+    font-family: FreightBig Pro;
+    align-items: center;
+}
+
+.copyright p {
+    margin: unset;
+    font-size: 15px;
+}

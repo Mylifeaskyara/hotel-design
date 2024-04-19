@@ -9,7 +9,7 @@ function fadeAnime(){
 
   //ふわっと動くきっかけのクラス名と動きのクラス名の設定
   $('.fadeUpTrigger').each(function(){ //fadeInUpTriggerというクラス名が
-  　　var elemPos = $(this).offset().top-10; //要素より、50px上の
+  　　var elemPos = $(this).offset().top-60; //要素より、50px上の
   　　var scroll = $(window).scrollTop();
   　　var windowHeight = $(window).height();
   　　if (scroll >= elemPos - windowHeight){
@@ -23,7 +23,7 @@ function fadeAnime(){
   
   //関数でまとめることでこの後に違う動きを追加することが出来ます
   $('.fadeDownTrigger').each(function(){ //fadeInDownTriggerというクラス名が
-  　　var elemPos = $(this).offset().top-50; //要素より、50px上の
+  　　var elemPos = $(this).offset().top-60; //要素より、50px上の
   　　var scroll = $(window).scrollTop();
   　　var windowHeight = $(window).height();
   　　if (scroll >= elemPos - windowHeight){
